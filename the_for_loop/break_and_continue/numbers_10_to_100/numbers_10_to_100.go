@@ -1,0 +1,21 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	var n int
+	for n <= 100 {
+		fmt.Scan(&n)
+		if n < 10 {
+			continue
+		} else {
+			if n > 100 {
+				break
+			} else {
+				fmt.Println(n)
+			}
+		}
+	}
+}
